@@ -42,6 +42,18 @@ var kronos = (function () {
         var dateStr = new Date(timestamp);
         return dateStr;
     }
+    
+    function frenchDate (timestamp){
+        var timeSt = new Date(timestamp);
+        var annee = timeSt.getFullYear();
+        var mois = timeSt.getMonth();
+        var date = timeSt.getDate();
+        var jour = timeSt.getDay();
+        console.log(jourString[jour]);
+        return jourString[jour]+' '+
+                date+' '+
+                pullMonth(mois+1).fr+' '+annee;
+    }
 
     /**
      
@@ -162,7 +174,8 @@ var kronos = (function () {
     return {
         isLeap: isLeap,
         getMonthDay1: getMonthDay1,
-        pullMonth: pullMonth
+        pullMonth: pullMonth,
+        getFrDate: frenchDate
     };
 })();
 
