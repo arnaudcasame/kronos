@@ -22,6 +22,12 @@
             var timest = 1470456000000;
             var other = new Date(timest);
             console.log('Other', other);
+
+            var dateStr = new Date(1470456000000);
+            dateStr = dateStr.toISOString();
+            console.log(dateStr);
+
+            console.log(kronos.getFrDate(1470456000000));
         </script>
     </body>
 </html>
