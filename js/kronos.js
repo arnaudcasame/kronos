@@ -38,6 +38,11 @@ var kronos = (function () {
         return weekDay;
     }
 
+    function timeSt_dateStr(timestamp){
+        var dateStr = new Date(timestamp);
+        return dateStr;
+    }
+
     /**
      
      
