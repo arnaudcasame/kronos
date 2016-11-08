@@ -1,0 +1,23 @@
+{
+  "name": "kronos",
+  "version": "1.0.0",
+  "description": "A date manipulator API\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Cto make it easier \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D working with date easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "keywords": [
+    "Javascript",
+    "npm",
+    "git",
+    "dateObject",
+    "GitHub",
+    "API"
+  ],
+  "author": "Arnaud Casame",
+  "license": "ISC"
+}
