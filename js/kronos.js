@@ -6,6 +6,10 @@ var kronos = (function () {
         month = now.getMonth() + 1,
         year = now.getFullYear(),
         weekDay = now.getDay(),
+        heure = now.getHours(),
+        minute = now.getMinutes(),
+        seconde = now.getSeconds(),
+        krono = null;
         dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         jourString = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
 
@@ -53,6 +57,15 @@ var kronos = (function () {
         return jourString[jour]+' '+
                 date+' '+
                 pullMonth(mois+1).fr+' '+annee;
+    }
+
+    function _Now(){
+        krono = now;
+        krono = Date.parse(krono);
+        krono = frenchDate(krono);
+        console.log(heure, minute, seconde);
+        console.log(now.getTime());
+        return krono;
     }
 
     /**
@@ -178,7 +191,8 @@ var kronos = (function () {
         isLeap: isLeap,
         getMonthDay1: getMonthDay1,
         pullMonth: pullMonth,
-        getFrDate: frenchDate
+        getFrDate: frenchDate,
+        now: _Now
     };
 })();
 
