@@ -160,7 +160,7 @@ var kronos = (function () {
                 abrfr: "nov."
             };
             break;
-        default:
+        case 12:
             return {
                 fr: "décembre",
                 nbreJr: 31,
@@ -168,6 +168,9 @@ var kronos = (function () {
                 abren: "dec.",
                 abrfr: "déc."
             };
+
+        default:
+            alert("- You entered a wrong month number \n- "+monthNum+' is not a month number');
         }
     }
 
